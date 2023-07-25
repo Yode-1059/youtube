@@ -21,12 +21,12 @@ const Home = () => {
       let seconds = d.getSeconds().toString().padStart(2, "0");
       setTime(hour + ":" + minute + ":" + seconds);
       if (d.getHours() - 1 == endedTime && d.getMinutes() == 50) {
-        alert("10分前");
+        alert("10分前です");
       }
       if (
         d.getSeconds() === 0 &&
         d.getHours() === endedTime &&
-        d.getMinutes() == 44
+        d.getMinutes() == 0
       ) {
         alert("終了します");
         setView(false);
